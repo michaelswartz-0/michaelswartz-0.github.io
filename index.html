@@ -5,25 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function loadContent(href) {
-            console.log('fetching')
-            fetch(href)
-                .then(response => response.text())
-                .then(text => document.getElementById('content').innerHTML = text);
-            console.log('done')
-        }
-    </script>
 </head>
 
 <body>
-    <div id="menu">
-        <span>M.G. Swartz</span>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li onclick="loadContent('God.html')">Existence of God</li>
-        </ul>
-    </div>
+    <!--#include file="menu.html" -->
     <div id="content">
         Content here
     </div>
